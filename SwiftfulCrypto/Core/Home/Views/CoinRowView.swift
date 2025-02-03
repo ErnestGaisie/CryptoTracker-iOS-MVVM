@@ -57,6 +57,7 @@ extension CoinRowView {
                 .foregroundColor(Color.theme.accent)
         }
     }
+    
     private var centerColumn: some View {
         HStack(spacing: 0){
             VStack(alignment: .trailing) {
@@ -66,6 +67,7 @@ extension CoinRowView {
             .foregroundColor(Color.theme.accent)
         }
     }
+    
     private var rightColumn: some View {
         HStack(spacing: 0){
             VStack (alignment: .trailing) {
