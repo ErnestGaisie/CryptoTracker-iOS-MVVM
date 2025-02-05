@@ -89,8 +89,9 @@ extension HomeView {
                     .listRowInsets(.init(top: 10, leading: 0, bottom: 10, trailing: 10))
             }
         }
+        .scrollDisabled(false)
         .listStyle(PlainListStyle())
-    }
+            }
     
     private var columnTitles: some View {
         HStack {
