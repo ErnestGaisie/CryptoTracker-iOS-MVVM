@@ -17,10 +17,10 @@ class HomeViewModel: ObservableObject {
     private var cancellables = Set<AnyCancellable>()
     
     init(){
-        addSubscriber()
+        addSubscribers()
     }
     
-    func addSubscriber() {
+    func addSubscribers() {
         dataService.$allCoins
             .sink { [weak self] (returnedCoins) in
                 self?.allCoins = returnedCoins
